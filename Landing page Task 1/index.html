@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Travel website landing page</title>
+    <link rel="icon" href="airplane.png" alt="airplane image" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Travel Guide</a></li>
+                <li><a href="#">Best Places to Explore</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+            <button class="butn" onclick="bookNow()"><img src="icon.png">Booking</button>
+        </nav>
+        <div class="content">
+            <h1>The Beautiful <br>World Waiting For you!!!</h1>
+            <p>"The Beautiful" captures the exquisite essence of anticipation, where every moment is a delicate dance
+                of longing and hope. Time slows to a whisper as hearts beat in synchrony, each breath a testament to the
+                depth of connection. In this suspended state, the mundane transcends into the extraordinary, as emotions
+                swell and anticipation reaches its zenith. Yet, amidst the yearning, there lies a profound beauty the
+                journey of waiting itself. For in the tapestry of anticipation, woven with threads of hope and desire,
+                lies the true essence of love, where every moment, every heartbeat, is a celebration of the beautiful
+                anticipation of reunion.</p>
+
+            <p>Experience the wonders of the world with our travel guide, offering insights into the most breathtaking
+                destinations. Whether you're seeking adventure, relaxation, or cultural immersion, our guide will help
+                you plan the perfect trip.</p>
+
+            <p>Explore the hidden gems and must-see attractions of our top destinations. From pristine beaches to
+                majestic mountains, our curated list of best places to explore guarantees unforgettable experiences for
+                every traveler.</p>
+
+            <p>Discover the story behind our travel website. Learn about our mission, values, and commitment to
+                providing exceptional travel experiences for our customers.</p>
+
+            <p>Have questions or need assistance? Contact our friendly team for personalized support and travel advice.
+                We're here to help make your travel dreams a reality.</p>
+
+            <form>
+                <input list="countries" type="text" id="country" name="country" placeholder="Choose Your Country">
+                <datalist id="countries">
+                    <option value="United States">
+                    <option value="Canada">
+                    <option value="Sri Lanka">
+                    <option value="United Kingdom">
+                    <option value="France">
+                    <option value="Germany">
+                    <option value="Italy">
+                    <option value="Spain">
+                    <option value="Japan">
+                    <option value="Australia">
+                    <option value="Brazil">
+                    <option value="China">
+                    <option value="Mexico">
+                    <option value="Russia">
+                    <option value="South Africa">
+                </datalist>
+                <button type="submit" class="butn" onclick="search()">Search</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>Email: <a href="mailto:thexplore@gmail.com">thexplore@gmail.com</a></p>
+        <p>Phone: +1 909-748-2234</p>
+        <p>&copy; 2024 Travel Website. All rights reserved.</p>
+        <p>More Information:Find out more about our services, policies and special offers by visiting our website thankyou.</p>
+    </footer>
+
+    <script>
+        function bookNow() {
+            alert("Booking function is not available yet. Please check back later!");
+        }
+
+        function search() {
+            var country = document.getElementById("country").value;
+            alert("Searching for " + country + ". Search function is not available yet Please check back later!");
+        }
+    </script>
+</body>
+
+</html>
+
+
